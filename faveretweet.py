@@ -10,10 +10,10 @@ import os
 logger = logging.getLogger()
 
 def create_api():
-    consumer_key = os.getenv("CONSUMER_KEY")
-    consumer_secret = os.getenv("CONSUMER_SECRET")
-    access_token = os.getenv("ACCESS_TOKEN")
-    access_token_secret = os.getenv("ACCESS_TOKEN_SECRET")
+    consumer_key = os.getenv("consumer_key_MH_Pj1")
+    consumer_secret = os.getenv("consumer_secret_MH_Pj1")
+    access_token = os.getenv("access_token_MH_Pj1")
+    access_token_secret = os.getenv("access_token_secret_MH_Pj1")
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
@@ -64,4 +64,4 @@ def main(keywords):
     stream.filter(track=keywords, languages=["en"])
 
 if __name__ == "__main__":
-    main(["#mentalhealth","#mentalillness","#MentalHealth","MentalHealthAwareness","MentalHealthMatters","#mentalhealthawareness","mentalhealthmatters"])
+    main(["#mentalhealth","#mentalillness","#MentalHealth","MentalHealthAwareness","MentalHealthMatters","#mentalhealthawareness","mentalhealthmatters", "#SuicidePrevention"])
