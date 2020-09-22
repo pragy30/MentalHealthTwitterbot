@@ -64,4 +64,4 @@ def main(keywords):
     stream.filter(track=keywords, languages=["en"])
 
 if __name__ == "__main__":
-    main(["#mentalhealth","#mentalillness","#MentalHealth","MentalHealthAwareness","MentalHealthMatters","#mentalhealthawareness","mentalhealthmatters", "#SuicidePrevention"])
+    main(["#mentalhealth","#mentalillness","#MentalHealth","#MentalHealthAwareness","#MentalHealthMatters","#mentalhealthawareness","#mentalhealthmatters", "#SuicidePrevention"])
