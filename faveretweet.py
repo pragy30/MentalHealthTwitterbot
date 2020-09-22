@@ -41,12 +41,6 @@ class FavRetweetListener(tweepy.StreamListener):
             tweet.user.id == self.me.id:
             # This tweet is a reply or I'm its author so, ignore it
             return
-        if not tweet.favorited:
-            # Mark it as Liked
-            try:
-                tweet.favorite()
-            except Exception as e:
-                logger.error("Error on fav", exc_info=True)
         if not tweet.retweeted:
             # Retweet
             try:
